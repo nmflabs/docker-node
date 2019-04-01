@@ -3,7 +3,8 @@ FROM node:10.15.3-alpine
 MAINTAINER Nabil Muhammad Firdaus <123.nabil.dev@gmail.com>
 
 ENV PUPPETEER_SKIP_CHROMIUM_DOWNLOAD true
-ENV CHROME_EXECUTABLE_PATH /usr/bin/chromium-browser
+ENV CHROME_PATH /usr/lib/chromium/
+ENV CHROME_BIN /usr/bin/chromium-browser
 
 RUN apk update && apk upgrade \
     # Install some tools.
