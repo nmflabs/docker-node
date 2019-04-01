@@ -1,0 +1,8 @@
+version: "3.7"
+
+services:
+  node-10.15.3-alpine-puppeteer:
+    image: nmflabs/node:10.15.3-alpine-puppeteer
+    build:
+      context: .
+      dockerfile: 10/alpine-puppeteer/Dockerfile
