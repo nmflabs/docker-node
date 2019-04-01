@@ -24,7 +24,7 @@ RUN apk update && apk upgrade \
     && yarn global add puppeteer@1.11.0 \
     # Add user so we don't need --no-sandbox.
     && addgroup -S pptruser && adduser -S -g pptruser pptruser \
-        && mkdir -p /home/pptruser/Downloads \
+        && mkdir -p /home/pptruser/Downloads /app \
         && chown -R pptruser:pptruser /home/pptruser \
         && chown -R pptruser:pptruser /app
 
