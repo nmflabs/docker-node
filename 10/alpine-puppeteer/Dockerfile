@@ -8,6 +8,7 @@ ENV CHROME_PATH /usr/bin/chromium-browser
 RUN apk update && apk upgrade \
     # Install some tools.
     && apk --no-cache add \
+        automake \
         autoconf \
         libtool \
         procps \
