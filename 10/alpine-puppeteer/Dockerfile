@@ -8,7 +8,7 @@ ENV CHROME_PATH /usr/bin/chromium-browser
 RUN apk update && apk upgrade \
     # Install some tools.
     && apk --no-cache add \
-        autoreconf \
+        autoconf \
         procps \
         bash \
     # Installs latest Chromium (72) package.
