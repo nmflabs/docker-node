@@ -9,6 +9,8 @@ RUN apk update && apk upgrade \
     # Install some tools.
     && apk --no-cache add \
         build-base \
+        autoconf \
+        libtool \
         procps \
         bash \
     # Installs latest Chromium (72) package.
